@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{050A4E2E-53C4-44A4-9D44-D9B24C6BCFFD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Atestat</RootNamespace>
+    <AssemblyName>Atestat</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtestatDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AtestatDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cont_nou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cont_nou.Designer.cs">
+      <DependentUpon>Cont_nou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Descriere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Descriere.Designer.cs">
+      <DependentUpon>Descriere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emailnou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emailnou.Designer.cs">
+      <DependentUpon>Emailnou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Detalii_comanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalii_comanda.Designer.cs">
+      <DependentUpon>Detalii_comanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_jocuri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_jocuri.Designer.cs">
+      <DependentUpon>Lista_jocuri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meniu.Designer.cs">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="News.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="News.Designer.cs">
+      <DependentUpon>News.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagina_Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagina_Start.Designer.cs">
+      <DependentUpon>Pagina_Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parolanoua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parolanoua.Designer.cs">
+      <DependentUpon>Parolanoua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profil.Designer.cs">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VizComanda.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VizComanda.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cont_nou.resx">
+      <DependentUpon>Cont_nou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Descriere.resx">
+      <DependentUpon>Descriere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detalii_comanda.resx">
+      <DependentUpon>Detalii_comanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emailnou.resx">
+      <DependentUpon>Emailnou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_jocuri.resx">
+      <DependentUpon>Lista_jocuri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meniu.resx">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="News.resx">
+      <DependentUpon>News.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagina_Start.resx">
+      <DependentUpon>Pagina_Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parolanoua.resx">
+      <DependentUpon>Parolanoua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profil.resx">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="AtestatDataSet.xsc">
+      <DependentUpon>AtestatDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AtestatDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AtestatDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AtestatDataSet.xss">
+      <DependentUpon>AtestatDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VizComanda.xsc">
+      <DependentUpon>VizComanda.xsd</DependentUpon>
+    </None>
+    <None Include="VizComanda.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VizComanda.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VizComanda.xss">
+      <DependentUpon>VizComanda.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steam-logo_story.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steam-logo-wallpaper-32826-33581-hd-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steam-logo-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark-grey-background-pattern-i7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dark-Gray-Background-for-Free-Download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue-Gradient-Wallpaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Atestat.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="bin\Debug\Imagini\steam-logo-transparent.png" />
+    <None Include="bin\Debug\Imagini\steam-logo_story.jpg" />
+    <None Include="bin\Debug\Imagini\dark-grey-background-pattern-i7.jpg" />
+    <None Include="bin\Debug\Imagini\Dark-Gray-Background-for-Free-Download.jpg" />
+    <None Include="bin\Debug\Imagini\Blue-Gradient-Wallpaper.png" />
+    <None Include="bin\Debug\Imagini\blue_pattern-wallpaper-1366x768.jpg" />
+    <None Include="bin\Debug\Imagini\28.jpg" />
+    <None Include="bin\Debug\Imagini\27.jpg" />
+    <None Include="bin\Debug\Imagini\26.jpg" />
+    <None Include="bin\Debug\Imagini\25.png" />
+    <None Include="bin\Debug\Imagini\24.jpg" />
+    <None Include="bin\Debug\Imagini\23.jpg" />
+    <None Include="bin\Debug\Imagini\22.jpg" />
+    <None Include="bin\Debug\Imagini\21.jpg" />
+    <None Include="bin\Debug\Imagini\20.jpg" />
+    <None Include="bin\Debug\Imagini\19.jpg" />
+    <None Include="bin\Debug\Imagini\18.jpg" />
+    <None Include="bin\Debug\Imagini\17.jpg" />
+    <None Include="bin\Debug\Imagini\16.jpg" />
+    <None Include="bin\Debug\Imagini\15.jpg" />
+    <None Include="bin\Debug\Imagini\14.jpg" />
+    <None Include="bin\Debug\Imagini\13.jpg" />
+    <None Include="bin\Debug\Imagini\12.jpg" />
+    <None Include="bin\Debug\Imagini\11.jpg" />
+    <None Include="bin\Debug\Imagini\10.jpg" />
+    <None Include="bin\Debug\Imagini\9.jpg" />
+    <None Include="bin\Debug\Imagini\8.jpg" />
+    <None Include="bin\Debug\Imagini\7.jpg" />
+    <None Include="bin\Debug\Imagini\6.jpg" />
+    <None Include="bin\Debug\Imagini\5.jpg" />
+    <None Include="bin\Debug\Imagini\4.jpg" />
+    <None Include="bin\Debug\Imagini\3.jpg" />
+    <None Include="bin\Debug\Imagini\2.png" />
+    <None Include="bin\Debug\Imagini\1.jpg" />
+    <None Include="Resources\69372-empty-shopping-cart.png" />
+    <None Include="bin\Debug\Imagini\Capture.PNG" />
+    <None Include="bin\Debug\Imagini\EL_24_teams_story-1068x427.jpg" />
+    <None Include="bin\Debug\Imagini\il_570xN.1423189347_e52u.jpg" />
+    <None Include="bin\Debug\Imagini\da.jpg" />
+    <None Include="bin\Debug\Imagini\dark-Custom.png" />
+    <None Include="bin\Debug\Imagini\detroit_become_human_demo_cover_1524576037809.jpg" />
+    <None Include="bin\Debug\Imagini\killing_floor_incursion-Custom.png" />
+    <None Include="bin\Debug\Imagini\e616c2cb-327f-11e8-b145-42010af00c34-555x319.jpg" />
+    <None Include="bin\Debug\Imagini\header.jpg" />
+    <None Include="bin\Debug\Imagini\d9e1054f1b081242ffa17a1638e8e789.jpg" />
+    <None Include="bin\Debug\Imagini\69372-empty-shopping-cart.png" />
+    <None Include="bin\Debug\Imagini\steam-logo-wallpaper-32826-33581-hd-wallpapers.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
